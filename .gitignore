@@ -1,0 +1,4 @@
+*.pyc
+.ropeproject
+lastid.tmp
+body.tmp
