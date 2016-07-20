@@ -12,7 +12,7 @@ try:
 except:
     pass
 
-resp = requests.get('http://www.wg-gesucht.de/wohnungen-in-Berlin.8.2.0.0.html')
+resp = requests.get('http://www.wg-gesucht.de/en/wohnungen-in-Berlin.8.2.0.0.html?filter=97d0cd356b0f749d3524d653301d91be410257280986c8c4ba')
 d = pq(resp.text)
 trs = d('#table-compact-list tr').not_('.inlistTeaser')[2:]
 ids = [tr.attrib['adid'] for tr in trs]
